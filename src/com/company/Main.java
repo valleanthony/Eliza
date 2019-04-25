@@ -1,5 +1,9 @@
 package com.company;
 
+import com.sun.org.apache.xpath.internal.SourceTree;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -15,16 +19,31 @@ public class Main {
         //Making a scanner for user input
         Scanner keyboard = new Scanner(System.in);
 
+        ArrayList<String> myArr = new ArrayList<String>();
+
         //declaring variables
         String userInput;
         Boolean keepOpen = true;
+        int wordsInArray;
 
         //Initial user message
         System.out.println("Good day. What is your problem? Enter your response here or Q to quit: ");
-        userInput= keyboard.nextLine();
+        userInput= keyboard.nextLine(); // take user input and store it in the var userInput
+
+        String words[] = userInput.split(" "); // This splits up the words in a string and stores them in an array.
+        System.out.println(words.length);//This out puts the qty of words in the array created by the split function.
+
+        for (){
+
+
+        }
 
 
 
+
+
+
+        /*
         //Start the while loop
         while(keepOpen){
             if (userInput.equalsIgnoreCase("q") || userInput.equalsIgnoreCase("I am feeling great")){
@@ -33,9 +52,11 @@ public class Main {
             else {
                 System.out.println("Why do you say that "+ userInput + "?");
                 userInput = keyboard.nextLine();
+                //if (userInput.split(" ") ==  )
             }
 
         }
+        */
 
 
 
